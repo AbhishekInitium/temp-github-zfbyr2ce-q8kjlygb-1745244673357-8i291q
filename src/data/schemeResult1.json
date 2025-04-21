@@ -1,0 +1,71 @@
+{
+  "agentPayouts": {
+    "A001": "4800.00",
+    "A002": "3200.00"
+  },
+  "ruleHitLogs": {
+    "A001": [
+      {
+        "ruleType": "Qualification",
+        "ruleId": "Q1",
+        "recordId": "TX001",
+        "message": "Minimum sales threshold met",
+        "timestamp": "2025-04-01T10:00:00Z"
+      },
+      {
+        "ruleType": "Adjustment",
+        "ruleId": "A1",
+        "recordId": "TX002",
+        "message": "Early bird bonus applied",
+        "timestamp": "2025-04-01T10:05:00Z"
+      }
+    ],
+    "A002": [
+      {
+        "ruleType": "Qualification",
+        "ruleId": "Q1",
+        "recordId": "TX003",
+        "message": "Minimum sales threshold met",
+        "timestamp": "2025-04-01T11:00:00Z"
+      }
+    ]
+  },
+  "creditDistributions": {
+    "M001": [
+      {
+        "fromAgent": "A001",
+        "role": "Manager",
+        "amount": "480.00",
+        "timestamp": "2025-04-01T10:10:00Z"
+      }
+    ],
+    "M002": [
+      {
+        "fromAgent": "A002",
+        "role": "Manager",
+        "amount": "320.00",
+        "timestamp": "2025-04-01T11:10:00Z"
+      }
+    ]
+  },
+  "rawRecordLevelData": [
+    {
+      "transactionId": "TX001",
+      "agentId": "A001",
+      "amount": 10000,
+      "date": "2025-04-01"
+    },
+    {
+      "transactionId": "TX002",
+      "agentId": "A001",
+      "amount": 15000,
+      "date": "2025-04-01"
+    },
+    {
+      "transactionId": "TX003",
+      "agentId": "A002",
+      "amount": 8000,
+      "date": "2025-04-01"
+    }
+  ]
+}
