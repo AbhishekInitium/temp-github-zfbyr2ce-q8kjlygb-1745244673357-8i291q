@@ -1,0 +1,58 @@
+{
+  "agentPayouts": {
+    "A001": "5200.00",
+    "A002": "4100.00"
+  },
+  "ruleHitLogs": {
+    "A001": [
+      {
+        "ruleType": "Qualification",
+        "ruleId": "Q1",
+        "recordId": "TX004",
+        "message": "Premium product bonus applied",
+        "timestamp": "2025-04-02T10:00:00Z"
+      }
+    ],
+    "A002": [
+      {
+        "ruleType": "Adjustment",
+        "ruleId": "A2",
+        "recordId": "TX005",
+        "message": "Team performance bonus",
+        "timestamp": "2025-04-02T11:00:00Z"
+      }
+    ]
+  },
+  "creditDistributions": {
+    "M001": [
+      {
+        "fromAgent": "A001",
+        "role": "Manager",
+        "amount": "520.00",
+        "timestamp": "2025-04-02T10:10:00Z"
+      }
+    ],
+    "M002": [
+      {
+        "fromAgent": "A002",
+        "role": "Manager",
+        "amount": "410.00",
+        "timestamp": "2025-04-02T11:10:00Z"
+      }
+    ]
+  },
+  "rawRecordLevelData": [
+    {
+      "transactionId": "TX004",
+      "agentId": "A001",
+      "amount": 12000,
+      "date": "2025-04-02"
+    },
+    {
+      "transactionId": "TX005",
+      "agentId": "A002",
+      "amount": 9500,
+      "date": "2025-04-02"
+    }
+  ]
+}
